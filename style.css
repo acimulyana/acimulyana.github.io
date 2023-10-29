@@ -1,0 +1,656 @@
+:root {
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "work Sans", sans-serif;
+  min-height: 4000px;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/bg1.png);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.home {
+  position: relative;
+  min-height: 100vh;
+}
+
+.home h1 .home h2 .home h3 .home p {
+  text-shadow: var(--shadow);
+}
+
+.fotoku {
+  margin-top: 5rem;
+}
+
+.judul {
+  margin-top: 8rem;
+}
+
+.judul h1 {
+  font-size: 2.3rem;
+  color: #24b4a4;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  text-shadow: var(--shadow);
+}
+
+.judul h2 {
+  font-size: 4rem;
+  font-family: "Lobster", cursive;
+  text-shadow: var(--shadow);
+}
+.judul h3 {
+  font-size: 2rem;
+  color: #757171;
+  font-family: "Oswald", sans-serif;
+  text-shadow: var(--shadow);
+}
+.judul p {
+  font-size: 1.5rem;
+  font-family: "Handlee", cursive;
+  color: #24b4a4;
+  font-weight: bold;
+  text-shadow: var(--shadow);
+}
+
+.tombol a {
+  background-color: #24b4a4;
+  font-size: 1.2rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+
+.tombol1 a {
+  background-color: #24b4a4;
+  font-size: 0.9rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+
+.tombol a:hover {
+  font-size: 1.2rem;
+  color: black;
+  background-color: #a9a9a9;
+}
+
+.tombol1 a:hover {
+  color: black;
+  background-color: #a9a9a9;
+}
+
+.sosmed a {
+  color: black;
+  font-size: 2.2rem;
+  margin-right: 10px;
+  position: relative;
+  border: 2px solid #24b4a4;
+  padding: 2px;
+}
+
+.sosmed a:hover {
+  color: white;
+  /* border: 2px solid #24b4a4; */
+  background: #24b4a4;
+}
+
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+}
+
+.mynavbar .navbar-brand {
+  color: #757171;
+}
+.mynavbar .navbar-brand span {
+  color: #24b4a4;
+}
+
+.mynavbar .nav-link {
+  font-family: "Handlee", cursive;
+  font-weight: bold;
+}
+
+.aku {
+  background-color: #e2e8f0;
+  min-height: 100vh;
+  margin-top: -4.7rem;
+  padding-top: 8rem;
+}
+
+.aku h2 {
+  font-family: "Lobster", cursive;
+  font-size: 2.5rem;
+}
+
+.aku .tentangku h2 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  color: #24b4a4;
+}
+
+.aku .tentangku p {
+  color: #757171;
+}
+
+.aku .tentangku span {
+  color: #38b8a9;
+}
+
+.pendidikan h2,
+.pekerjaan h2,
+.galery h2,
+.kontak h2 {
+  font-family: "Lobster", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.pendidikan p,
+.pekerjaan p,
+.galery p,
+.kontak p {
+  font-family: "Handlee", cursive;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.timeline {
+  list-style: none;
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 2px;
+  background-color: #ccc;
+  left: 50%;
+}
+
+.timeline li {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.timeline li::before,
+.timeline li::after {
+  content: "";
+  display: table;
+}
+
+.timeline li::after {
+  clear: both;
+}
+
+.timeline li .timeline-image {
+  width: 160px;
+  height: 160px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.timeline li .timeline-panel {
+  width: 40%;
+  float: left;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  position: relative;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.timeline li .timeline-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  top: 65px;
+  right: -15px;
+}
+
+.timeline li .timeline-panel::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  top: 66px;
+  right: -13px;
+}
+
+.timeline-heading h3 {
+  color: #24b4a4;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  text-shadow: var(--shadow);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.timeline-heading span {
+  color: #757171;
+  font-family: "Lobster", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.timeline-body {
+  color: #757171;
+  font-family: "Lobster", cursive;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-family: "Oswald", sans-serif;
+  margin-top: 15px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -13px;
+  right: auto;
+}
+
+.pendidikan {
+  padding-bottom: 5rem;
+}
+
+.pekerjaan {
+  background-color: #e2e8f0;
+  padding-bottom: 5rem;
+  margin-top: -5rem;
+}
+
+.kontak {
+  background-color: #e2e8f0;
+  padding-bottom: 5rem;
+}
+
+.keahlian {
+  background-color: #334155;
+  min-height: 100vh;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+/* .galery {
+  padding-bottom: 5rem;
+} */
+
+.keahlian h2 {
+  font-family: "Lobster", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #24b4a4;
+}
+
+.keahlian p {
+  font-family: "Handlee", cursive;
+  color: #e2e8f0;
+  margin-top: 10px;
+}
+
+.keahlian img {
+  filter: grayscale(1);
+}
+
+.keahlian img:hover {
+  filter: grayscale(0);
+}
+
+.card1 h4 {
+  color: #24b4a4;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.card1 p {
+  font-family: "Lobster", cursive;
+  font-size: 1rem;
+}
+.card2 h4 {
+  color: #24b4a4;
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.card2 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.kontaku {
+  margin-top: -8rem;
+}
+
+.kontaku h2 {
+  font-size: 1.8rem;
+}
+
+.kontaku p {
+  font-family: "Dosis", sans-serif;
+}
+
+footer {
+  padding: 3rem;
+  background-color: #1d242e;
+  color: white;
+}
+
+footer a {
+  color: #24b4a4;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+
+.sosmed-footer a {
+  font-size: 400px;
+}
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+@keyframes rotating {
+  form {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Query */
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 80%;
+  }
+  .judul h1 {
+    margin-left: -90px;
+  }
+  .judul h2 {
+    margin-left: -90px;
+  }
+  .judul h3 {
+    margin-left: -90px;
+  }
+  .judul p {
+    margin-left: -90px;
+  }
+  .judul a {
+    margin-left: -90px;
+  }
+  .fotoku img {
+    width: 250%;
+  }
+
+  .timeline::before {
+    left: 60px;
+  }
+
+  .timeline li .timeline-image {
+    left: 15px;
+    margin-left: 45px;
+    top: 16px;
+  }
+
+  .timeline li .timeline-panel {
+    width: calc((100% - 200px));
+    float: right;
+  }
+
+  .timeline li .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+  .timeline li .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+  }
+  .peta {
+    margin-top: 10px;
+  }
+
+  .peta h2 {
+    padding-top: 20px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+  .judul h1 {
+    margin-left: -100px;
+  }
+  .judul h2 {
+    margin-left: -100px;
+  }
+  .judul h3 {
+    margin-left: -100px;
+  }
+  .judul p {
+    margin-left: -100px;
+  }
+  .judul a {
+    margin-left: -100px;
+  }
+  .fotoku img {
+    width: 300%;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sticky-top {
+    overflow: hidden;
+  }
+  .timeline li .timeline-image {
+    width: 140px;
+    height: 140px;
+  }
+  .peta {
+    margin-top: 5px;
+  }
+
+  .peta h2 {
+    padding-top: 20px;
+  }
+}
+
+/* Phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 70%;
+  }
+  .judul {
+    margin-top: 5rem;
+  }
+  .judul h1 {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .judul h2 {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 6px;
+    text-align: center;
+  }
+  .judul h3 {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 6px;
+    text-align: center;
+  }
+  .judul p {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 6px;
+    text-align: center;
+  }
+  .judul a {
+    margin-left: 30px;
+    text-align: center;
+  }
+
+  .fotoku {
+    /* margin-left: 30rem; */
+    justify-content: center;
+    text-align: center;
+  }
+
+  .fotoku img {
+    width: 60%;
+    margin-top: -35px;
+  }
+
+  .sosmed {
+    margin-top: 15px;
+  }
+
+  .sosmed a {
+    margin-right: 2px;
+  }
+  .tombol a {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+
+  .tombol a:hover {
+    font-size: 1.5rem;
+  }
+
+  .aku .tentangku p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .timeline li .timeline-image {
+    width: 100px;
+    height: 100px;
+  }
+  .timeline li .timeline-panel {
+    width: 60%;
+    transform: translateX(-10px);
+  }
+
+  .timeline li .timeline-panel::before {
+    top: 50px;
+  }
+
+  .timeline li .timeline-panel::after {
+    top: 51px;
+  }
+
+  .card {
+    width: 80%;
+  }
+  .card h4 {
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 25px;
+  }
+
+  .card p {
+    font-size: 1.3rem;
+  }
+
+  .peta {
+    margin-top: 4px;
+  }
+
+  .peta h2 {
+    padding-top: 20px;
+  }
+}
